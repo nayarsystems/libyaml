@@ -1,8 +1,8 @@
-#if HAVE_CONFIG_H
+//#if HAVE_CONFIG_H
 #include "config.h"
-#endif
+//#endif
 
-#include <yaml.h>
+#include "yaml.h"
 
 #include <assert.h>
 #include <limits.h>
@@ -42,7 +42,7 @@ yaml_parser_fetch_more_tokens(yaml_parser_t *parser);
  * The size of the input raw buffer.
  */
 
-#define INPUT_RAW_BUFFER_SIZE   16384
+#define INPUT_RAW_BUFFER_SIZE   512
 
 /*
  * The size of the input buffer.
@@ -56,7 +56,7 @@ yaml_parser_fetch_more_tokens(yaml_parser_t *parser);
  * The size of the output buffer.
  */
 
-#define OUTPUT_BUFFER_SIZE      16384
+#define OUTPUT_BUFFER_SIZE      512
 
 /*
  * The size of the output raw buffer.

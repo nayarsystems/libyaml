@@ -1,6 +1,9 @@
 
 #include "yaml_private.h"
 
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wunused-value"
+
 /*
  * Flush the buffer if needed.
  */
@@ -2356,3 +2359,5 @@ yaml_emitter_write_folded_scalar(yaml_emitter_t *emitter,
 
     return 1;
 }
+
+#pragma GCC diagnostic pop
